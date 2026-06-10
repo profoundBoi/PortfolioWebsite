@@ -20,13 +20,15 @@ function buildNav(){
     const ul=document.createElement("ul"); 
     ul.classList.add("navigation-links", "italianno-regular"); 
 
+    const currentPage = window.location.pathname.split('/').pop();
+
     navLinks.forEach(link =>{
         const li=document.createElement("li");
         const a=document.createElement("a");
         a.href=link.href;
         a.textContent=link.name;
 
-        if (window.location.pathname.includes(link.href)){
+        if (currentPage === link.href.split('/').pop()){
             a.classList.add("active");
         }
 
