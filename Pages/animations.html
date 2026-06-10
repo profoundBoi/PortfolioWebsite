@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography & Animations</title>
+    <link rel="stylesheet" href="../Styles/main.css" />
+    <link rel="stylesheet" href="../Styles/responsive.css" />
+    <link rel="stylesheet" href="../Styles/animations.css"/> 
+</head>
+<body class="coloured-bg">
+
+<div class="loader" id="loader">
+    <div class="loader-ring"></div>
+</div>
+
+    <nav id="desktop-nav"></nav>
+
+    <div class="themetoggle">
+        <button class="theme-btn" id="themeBtn">Themes</button>
+        <div class="theme-dropdown" id="themeDropdown">
+            <button id="lightMode">Light</button>
+            <button id="darkMode">Dark</button>
+        </div>
+    </div>
+
+    <main class="animations-container">
+        <h1 class="animations-title niconne-regular">Animations</h1>
+        <p class="ultra-regular">This is some of the animations i've made recently! Each slide shows a before and after process, with the last slide being a combination of animations i've just experimented and have had some fun with. Feel free to watch them! If you want to know more abouth them and their respective processes you can click the links below.</p>
+
+        <div class="video-grid">
+
+            <div class="video-item">
+                <div class="mini-carousel" id="carousel1">
+                    <button class="mini-prev" onclick="miniPrev(1)"><</button>
+                    <div class="mini-slides">
+                        <video class="mini-slide active-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Flour sack performance.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/flower sack performance portfolio.mp4" muted loop></video>
+                    </div>
+                    <button class="mini-next" onclick="miniNext(1)">></button>
+                </div>
+                <p class="video-title italianno-regular"><a href="#description1">flour, curious about another flower</a></p>
+            </div>
+
+    
+            <div class="video-item">
+                <div class="mini-carousel" id="carousel2">
+                    <button class="mini-prev" onclick="miniPrev(2)"><</button>
+                    <div class="mini-slides">
+                        <video class="mini-slide active-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Animate in perspective.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/animate in perspective portfolio.mp4" muted loop></video>
+                    </div>
+                    <button class="mini-next" onclick="miniNext(2)">></button>
+                </div>
+                <p class="video-title italianno-regular"><a href="#description2">Ouch!</a></p>
+            </div>
+
+            <div class="video-item">
+                <div class="mini-carousel" id="carousel3">
+                    <button class="mini-prev" onclick="miniPrev(3)"><</button>
+                    <div class="mini-slides">
+                        <video class="mini-slide active-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Fireworks class exercise.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/fireworks portfolio.mp4" muted loop></video>
+                    </div>
+                    <button class="mini-next" onclick="miniNext(3)">></button>
+                </div>
+                <p class="video-title italianno-regular"><a href="#description3">How's those new years resolutions going?</a></p>
+            </div>
+
+        </div>
+
+        <div class="video-grid">
+
+            <div class="video-item">
+                <div class="mini-carousel" id="carousel4">
+                    <button class="mini-prev" onclick="miniPrev(4)"><</button>
+                    <div class="mini-slides">
+                        <video class="mini-slide active-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Single bouncing ball.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Bouncing ball class exercise.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Bowling ball.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/bouncing balls portfolio.mp4" muted loop></video>
+                    </div>
+                    <button class="mini-next" onclick="miniNext(4)">></button>
+                </div>
+                <p class="video-title italianno-regular"><a href="#description4">Don't forget your bounce classes!</a></p>
+            </div>
+
+            <div class="video-item">
+                <div class="mini-carousel" id="carousel5">
+                    <button class="mini-prev" onclick="miniPrev(5)"><</button>
+                    <div class="mini-slides">
+                        <video class="mini-slide active-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Lift and push_ Lift.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/blink twice.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/blow out your candles.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/Obstacle course.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/walk cycle.mp4" muted loop></video>
+                        <video class="mini-slide" src="../Assets/Images/Sketches/Artwoks/Animations/smack.mp4" muted loop></video>
+                    </div>
+                    <button class="mini-next" onclick="miniNext(5)">></button>
+                </div>
+                <p class="video-title italianno-regular"><a href="#description5">Just a few stand alones</a></p>
+            </div>
+        </div>
+
+        <h1 class="niconne-regular">Photography</h1>
+       <p class="ultra-regular">What? Animations not your thing? Maybe you'll find browsing through some photography more enjoyable. I'm not sure if you can tell, but I may have a thing for sky and sunset pictures...</p>
+
+
+       <div class="photography-grid">
+    <img class="photo-img" src="../Assets/Images/blurred restuarant.jpg" alt="a blurry image of lights"/>
+    <img class="photo-img" src="../Assets/Images/blurry-sunbeam.jpg" alt="an image of blurry sunshine"/>
+    <img class="photo-img" src="../Assets/Images/dark-moon.jpg" alt="image of a moon in the dark"/>
+    <img class="photo-img" src="../Assets/Images/gloomy trees.jpg" alt="an hazy image of looming trees"/>
+    <img class="photo-img" src="../Assets/Images/ceiling.jpg" alt="image of paper umbrella's on the ceiling"/>
+    <img class="photo-img" src="../Assets/Images/jhb-2.jpg" alt="image of a city skyline"/>
+    <img class="photo-img" src="../Assets/Images/mountains.jpg" alt="an image of a shining moon"/>
+    <img class="photo-img" src="../Assets/Images/purple-clous-2.jpg" alt="an image of purple clouds"/>
+    <img class="photo-img" src="../Assets/Images/roses.jpeg" alt="an image of roses"/>
+    <img class="photo-img" src="../Assets/Images/pink-clouds.jpg" alt="an image of pink clouds"/>
+    <img class="photo-img" src="../Assets/Images/jhb.jpg" alt="an image of city skyline"/>
+    <img class="photo-img" src="../Assets/Images/where there's smoke there's fire.PNG" alt="an image of fire"/>
+    <img class="photo-img" src="../Assets/Images/sunbeam.jpg" alt="an image of a sunbeam"/>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <button class="close-lightbox" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+</div>
+
+<div class="descriptions-section">
+    <h2 class="niconne-regular descriptions-heading">About the animations</h2>
+    <p class="ultra-regular">Oh! you wanted to know more about my animations? :) well, here you are!</p>
+
+    <div class="description-card" id="description1">
+        <h3 class="niconne-regular">Some flour, curious about another flower</h3>
+        <p class=".pt-Sans-regular">Meet Grain! He's my little flour sack character, with a very silly personality. Everything is new to him, and he's only been a flour sack for a week now, so he's still discovering the world and engaging with the many wonders that it has to offer. Today Grain decided to take a walk in a garden and stumbled across a flower, I guess you could say they're cousins. But little did Grain know that the butterfly would give him a fright when it flies off, poor Grain :( Next time he'll know for sure that butterflies are pretty harmless, well at least lets hope so! <i><b>This was animated in Krita and took about 2-3 hours to complete.</i></b></p>
+    </div>
+
+    <div class="description-card" id="description2">
+        <h3 class="niconne-regular">Ouch!</h3>
+        <p class=".pt-Sans-regular">Well, well, well if it isn't Grain yet again! This silly flour sack is just everywhere exploring every corner of the world but he seems to be starring in a show or movie for todays adventure. I guess we should be taking opportunities the same way he does. What ever could he be doing though? Poor little guy fell out of the TV, he should watch his step sigh. <i><b>This piece was animated in krita and took 1.5-2 hours to complete.</b></i></p>
+    </div>
+
+    <div class="description-card" id="description3">
+        <h3 class="niconne-regular">How's those new years resolutions going?</h3>
+        <p class=".pt-Sans-regular">Ohh..fireworks, don't they remind you of New Years Eve? They sure remind me of New Years Eve. Remembering that makes me think about my new years resolutions :/ how are those going for you?..can't say I've been keeping up with them the way I should but alas even the slightest bit of progress is progress regardless, keep going! Fun fact, this is one of the first serious animations I've practiced. The lesson was to understand different types of timing. <i><b>Animated in Krita and took about 30 minutes to complete.</b></i></p>
+    </div>
+
+    <div class="description-card" id="description4">
+        <h3 class="niconne-regular">Don't forget your bounce classes!</h3>
+        <p class=".pt-Sans-regular">This was another animation exercise aimed towards practicing squash and stretch principles. We have two balls in this scene, a bouncy basketball named Spring and a sweet, but fiesty bowling ball named Strike. Strike is trying to practice her bounce classes, while Spring acts as her couch and mentor. She's slighlty frustrated with herself becuase no matter how much she tries she just can't bounce like Spring :( between me and you though, I don't think she'll achieve it, but lets wish her luck regardless! ^-^ <i><b> Animated in Krita and took 40-50 minutes to complete.</b></i></p>
+    </div>
+
+    <div class="description-card" id="description5">
+        <h3 class="niconne-regular">Just a few stand alones</h3>
+        <p class=".pt-Sans-regular">Oh my...you chose to read about the big guns, okay, well for starters this is a compilation of animations that don't have a final rendered version or were just done for fun and practice. We have a combination of spongebob trying to pick up a hammer, some eyes, a candle losing its flame, an obstacle course animation, a walk cycle and an animation for SMACK. While I won't go into detail about all of them, I will mention my favourite and least favourite with justifications. I'd say my favourite is the flame one, though simple, it was really fun to draw and to figure out the movement of the smoke, it also took about an hour to complete. My least favourite however, is by far the obstacle course due to how exhausting it was to draw on so many frames for the first time, 120 I believe. Another was the SMACK animation, though very simple looking, every stroke had a specific frame tied to it, and figuring out how that worked was really confusing, it took about 1.5-2 hours to complete.  </p>
+    </div>
+
+    </main>
+
+    <div class="video-lightbox" id="videoLightbox">
+        <button class="close-video-lightbox" id="videoLightboxClose">✕</button>
+        <video class="lightbox-video" id="lightboxVideo" controls></video>
+    </div>
+
+</div>
+    <script src="../Scripts/interactions.js"></script>
+    <script src="../Scripts/navigation.js"></script>
+    <script src="../Scripts/themetoggle.js"></script>
+    
+<a href="artworks.html" class="page-arrow prev-arrow" data-tooltip="Previous: Artworks"><</a>
+<a href="contact.html" class="page-arrow next-arrow" data-tooltip="Next: Contact">></a>
+
+</body>
+</html>

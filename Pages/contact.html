@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../Styles/main.css" />
+    <link rel="stylesheet" href="../Styles/responsive.css" />
+    <link rel="stylesheet" href="../Styles/contact.css"/> 
+</head>
+<body class="coloured-bg">
+
+<div class="loader" id="loader">
+    <div class="loader-ring"></div>
+</div>
+
+    <nav id="desktop-nav"></nav>
+
+    <div class="themetoggle">
+        <button class="theme-btn" id="themeBtn">Themes</button>
+        <div class="theme-dropdown" id="themeDropdown">
+            <button id="lightMode">Light</button>
+            <button id="darkMode">Dark</button>
+        </div>
+    </div>
+
+    <main class="contact-container">
+
+        <h1 class="contact-title niconne-regular">Contact Me</h1>
+
+        <div class="contact-form-wrapper">
+            <p class="italianno-regular">Have any questions? Or maybe want to know more about SMACK? Get in touch!</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label class="italianno-regular" for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name" required/>
+                </div>
+
+                <div class="form-group">
+                    <label class="italianno-regular" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email" required/>
+                </div>
+
+                <div class="form-group">
+                    <label class="italianno-regular" for="message">Message</label>
+                    <textarea id="message" rows="6" placeholder="Your message..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn italianno-regular">Send message</button>
+            </form>
+
+            <p class="thank-you-msg italianno-regular" id="thankYouMsg">
+                Thank you for reaching out! I'll get back to you soon
+            </p>
+        </div>
+
+    </main>
+
+    <script src="../Scripts/interactions.js"></script>
+    <script src="../Scripts/navigation.js"></script>
+    <script src="../Scripts/themetoggle.js"></script>
+
+    <a href="animations.html" class="page-arrow prev-arrow" data-tooltip="Previous: Animations"><</a>
+    
+</body>
+</html>

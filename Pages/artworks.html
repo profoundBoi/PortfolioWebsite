@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artworks</title>
+     <link rel="stylesheet" href="../Styles/main.css" />
+     <link rel="stylesheet" href="../Styles/responsive.css" />
+     <link rel="stylesheet" href="../Styles/artworks.css"/> 
+</head>
+<body class="coloured-bg">
+
+<div class="loader" id="loader">
+    <div class="loader-ring"></div>
+</div>
+
+    <nav id="desktop-nav"></nav>
+
+    <div class="themetoggle">
+        <button class="theme-btn" id="themeBtn">Themes</button>
+        <div class="theme-dropdown" id="themeDropdown">
+            <button id="lightMode">Light</button>
+            <button id="darkMode">Dark</button>
+        </div>
+    </div>
+
+    <main class="artworks-container">
+    <h1 class="artworks-title niconne-regular">Artworks</h1>
+    <p class="ultra-regular">What follows is a series of artworks that I have created and experimented with.</p>
+
+    <div class="top-section">
+        <div class="slider" id="slider1">
+            <button class="prev-btn" onclick="prevSlide()"><</button>
+            <div class="slides">
+                <img class="slide" src="../Assets/Images/cherry-blossoms.png" alt="an artwork of a cherry blossom tree"/>
+                <img class="slide" src="../Assets/Images/smile-and-wave.png" alt="an artwork of a crashing wave"/>
+                <img class="slide" src="../Assets/Images/her-pt3.png" alt="an artwork of an OC character"/>
+                <img class="slide" src="../Assets/Images/Zenin.jpeg" alt="an artwork of maki and toji zenin"/>
+                <img class="slide" src="../Assets/Images/Palestine.jpeg" alt="an artwork of palestine"/>
+                <img class="slide" src="../Assets/Images/look-beyond.jpeg" alt="an artwork of a girls side profile"/>
+                <img class="slide" src="../Assets/Images/Zenitsu.jpeg" alt="an artwork of an anime character"/>
+            </div>
+            <button class="next-btn" onclick="nextSlide()">></button>
+        </div>
+
+        <div class="static-images">
+            <img class="static-img" src="../Assets/Images/player (1).png" alt="OC 1"/>
+            <img class="static-img" src="../Assets/Images/player (2).png" alt="OC 2"/>
+            <img class="static-img" src="../Assets/Images/player (3).png" alt="OC 3"/>
+            <img class="static-img" src="../Assets/Images/tutu.png" alt="OC 4"/>
+        </div>
+    </div>
+
+    <div class="artwork-description">
+            <h2 class="niconne-regular">About my work</h2>
+            <p class=".pt-Sans-regular">I tend to dabble in quite a bit of digital art, traditional art as well as photography. I also experiment with paintings including water colour, oils and acrylics, but for now I have just included some of the digital pieces I have created.</p>
+            <p class=".pt-Sans-regular">Some of these include fully rendered works, semi rendered works and even sketches before reaching a final product. I've also included artworks that i've made for games such as starting screens, quit screens and game over screens.</p>
+            <h2 class="niconne-regular">So, what's my story? and what did I use to make these?</h2>
+            <p class=".pt-Sans-regular">My story goes way back, I started drawing digitally in highschool but I only used mobile drawing apps where I drew with my fingers (this is a pain that I'm glad I don't have to revist). At the time I drew more traditionally, it wasn't until university that I started drawing digitally again and this is where we are now! For the many digital artworks displayed above, and below, I have used Krita. Many people complain about how complicated it is to get around it, but I have been using it for a while and grew to understand it, allowing me to prefer it over other types of softwares, hence why many of my artworks are made using it.</p>
+            <p class=".pt-Sans-regular">I often find inspiration from underrated topics, fictional stories and emotional settings, as I feel they can evoke the most feeling when analysing a piece. </p>
+            <h2 class="niconne-regular">What's my goal? What do I strive to achieve?</h2>
+            <p class=".pt-Sans-regular">I strive to create meaningful stories that can drive an emotional response from viewers, making viewers feel seen, heard and understood. This is why I prefer creating from an emotional standpoint. Other times I create for the sake of being creative. I want to hone my skills and improve my creative skills and processes with the hopes of having what I create, even collaboratively, to reach people and allow them to tell their own stories.</p>
+
+        </div>
+
+    <div class="bottom-section">
+        <div class="slider" id="slider2">
+            <button class="prev-btn" onclick="prevSlide2()"><</button>
+            <div class="slides2">
+                <img class="slide2" src="../Assets/Images/for the sparkle.png" alt="Palestine"/>
+                <img class="slide2" src="../Assets/Images/Game over.png" alt="Game over screen"/>
+                <img class="slide2" src="../Assets/Images/ouija board.png" alt="Ouija board"/>
+                <img class="slide2" src="../Assets/Images/player reference 2.png" alt="model sheet"/>
+                <img class="slide2" src="../Assets/Images/thanks!.png" alt="two ocs"/>
+                <img class="slide2" src="../Assets/Images/rainbow portrait.png" alt="rainbow image"/> 
+            </div>
+            <button class="next-btn" onclick="nextSlide2()">></button>
+        </div>
+    </div>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+    <button class="close-lightbox" id="lightboxClose">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+</div>
+
+    <script src="../Scripts/interactions.js"></script>
+    <script src="../Scripts/navigation.js"></script>
+    <script src="../Scripts/themetoggle.js"></script>
+
+<a href="about.html" class="page-arrow prev-arrow" data-tooltip="Previous: About Me"><</a>
+<a href="animations.html" class="page-arrow next-arrow" data-tooltip="Next: Animations">></a>
+    
+</body>
+</html>

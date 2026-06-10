@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Italianno&family=Niconne&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ultra&display=swap');
+
+.pt-sans-regular{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.pt-sans-bold{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.ultra-regular{
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.slider{
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+    height: 400px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 15px rgba(196, 167, 109, 0.4);
+   
+}
+
+.slides{
+    display: flex;
+    height: 100%;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: #ffe9c4;
+}
+
+img.displaySlide{
+    display: block;
+}
+
+.prev-btn, .next-btn{ /*applies to both buttons*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 233, 196, 0.8);
+    border: 1px solid rgb(196, 167, 109);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.prev-btn{
+    left: 1rem;
+}
+
+.next-btn{
+    right: 1rem;
+}
+
+.prev-btn:hover, .next-btn:hover{
+    background: rgb(196, 167, 109);
+    color: white;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox.active{
+    display: flex;
+}
+
+.lightbox-img{
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.close-lightbox{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.artworks-container{
+    padding: 2rem 4rem;
+}
+
+.top-section{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+}
+
+.static-images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    flex: 1;
+    padding-top: 4rem;
+}
+
+.static-img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(196, 167, 109, 0.3);
+}
+
+.static-img:hover{
+    transform: scale(1.05);
+}
+
+.bottom-section{
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#slider2{
+    flex: 1.5;
+    width: 700px;
+    max-width:700px ;
+    height: 388px;
+}
+
+.artwork-description{
+    flex: 1;
+    padding: 1rem;
+}
+
+.artwork-description h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.artwork-description p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.slides2 img{
+    display: none;
+}
+
+img.displaySlide2{
+    display: block;
+}
+
+@media(max-width: 768px){
+
+    .top-section{
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+
+    .bottom-section{
+        align-items: center;
+    }
+
+    .artworks-container{
+        padding: 1rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .artworks-container h1,
+    .artworks-container p{
+        text-align: left;
+        width: 90%;
+    }
+
+    .artwork-decription{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .artwork-decription p{
+        font-size: 0.9rem;
+        line-height: 1.8;
+        word-wrap: break-word;
+    }
+
+    .static-images{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+       padding-top: 0;
+    } 
+
+    .slider{
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    #slider2{
+        width: 90%;
+        max-width: 90%;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+}

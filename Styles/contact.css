@@ -1,0 +1,91 @@
+.contact-container{
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.contact-form-wrapper{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form-wrapper p{
+    font-size: 1.5rem;
+    color: rgb(196, 167, 109);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label{
+    font-size: 1.3rem;
+    color: rgb(100, 85, 67);
+}
+
+.form-group input,
+.form-group textarea{
+    font-family: "Italianno", cursive;
+    font-size: 1.1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgb(196, 167, 109);
+    border-radius: 0.8rem;
+    background: rgba(255, 233, 196, 0.5);
+    color: #000;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+    border-color: rgb(160, 104, 56);
+    box-shadow: 0px 4px 15px rgba(196, 167, 109, 0.3);
+    background: rgba(255, 233, 196, 0.8);
+}
+
+.form-group textarea{
+    resize: vertical;
+}
+
+.submit-btn{
+    font-size: 1.4rem;
+    color: #000;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover{
+    background-color: rgb(196, 167, 109);
+    border-color: rgb(196, 167, 109);
+    color: white;
+}
+
+.thank-you-msg{
+    display: none;
+    font-size: 1.4rem;
+    color: rgb(196, 167, 109);
+    text-align: center;
+}
